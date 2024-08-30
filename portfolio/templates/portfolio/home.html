@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aditya Rajgor</title>
+        <!-- Font Awesome CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <style>
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <header>
+                        <h1>Aditya Rajgor</h1>
+                        <p>Welcome to my portfolio</p>
+                        <p><i class="fa-solid fa-location-dot"></i></i> Melbourne, Australia</p>
+                    </header>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/aditya-rajgor" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:adityarajgor88@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/aditya-rajgor" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="tel:+61478546082" target="_blank" class="social-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="image-container">
+                        <img src="{% static 'profile-pic.jpg' %}" alt="Profile Picture" class="rounded-circle">
+                    </div>
+                </div>
+            </div>
+            <section id="introduction">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque unde et laudantium doloremque iure iusto provident distinctio, vel nemo quisquam possimus nam eaque, aperiam cum! Et quidem cum distinctio iusto sunt est deserunt harum id asperiores amet, nemo minima quod saepe, cupiditate dicta cumque, dolorum explicabo nihil doloremque provident totam similique. Minus expedita nulla nam vitae explicabo tenetur corporis ea et sapiente?
+                     
+                    <br>Esse blanditiis accusamus quo, temporibus architecto odio, suscipit ut aspernatur ipsam hic impedit earum? Esse ipsam, hic quo velit atque debitis illum dignissimos ipsa qui delectus saepe est excepturi quos molestias possimus nesciunt porro corrupti. Rerum, illum esse eaque aliquid commodi ipsum maxime deserunt id soluta ea sed voluptatum corporis sint odit obcaecati doloremque est asperiores sunt dolore repudiandae iusto quas consequuntur, perferendis fuga. Aperiam maxime omnis laudantium odit exercitationem provident itaque magni quae quas saepe explicabo, iusto, reprehenderit quis porro corporis? Optio impedit dolores enim, architecto ratione, magnam laborum iure ullam ipsam reprehenderit animi assumenda magni laboriosam officia nulla. Reprehenderit nihil officia maiores id vel impedit, laboriosam deserunt ducimus nemo architecto earum dolorem nulla. Dolores quas ex doloremque voluptate odio, soluta debitis, sequi ad itaque adipisci non! Fugit at, quis quibusdam facere quaerat blanditiis rerum? Illo, libero!
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    {% for project in projects %}
+                    <li>
+                        <h3>{{ project.title }}</h3>
+                        <p style="white-space: pre-wrap;">{{ project.description }}</p>
+                        <p><strong>Status: {{ project.status }}</strong></p>
+                        <a href="{{ project.github }}"><i class="fab fa-github link-icon"></i></a>
+                    </li>
+                    {% empty %}
+                    <p>No projects available.</p>
+                    {% endfor %}
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-category">
+                    <h3 class="programming-languages">Programming Languages</h3>
+                    <ul>
+                        {% for skill in skills %}
+                        {% if skill.category == 'Programming Languages' %}
+                        <li>{{ skill.name }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 class="tools">Tools</h3>
+                    <ul>
+                        {% for skill in skills %}
+                        {% if skill.category == 'Tools' %}
+                        <li>{{ skill.name }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 class="soft-skills">Soft Skills</h3>
+                    <ul>
+                        {% for skill in skills %} {% if skill.category == 'Soft Skills' %}
+                        <li>{{ skill.name }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <h3>Team Leader at Dynamic Outreach</h3>
+                        <p>December 2023 - Present</p>
+                        <p>
+                            Since December 2023, I've been a face-to-face fundraiser for charities like the Red Cross, Fred Hollows Foundation, and Child Fund.
+                            My role involves engaging with people directly, sharing the missions of these organizations, and encouraging donations. This job has sharpened my communication skills and taught me how to connect with diverse individuals. Despite the challenges, it's rewarding to know that my work supports critical causes, helping to make a meaningful impact in people's lives.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Python Developer at Filed</h3>
+                        <p>October 2021 - December 2021</p>
+                        <p>
+                            As a Python Developer, I have built the script which gets 25k new Instagram influencers in less than 5 hours for our platform. Perform ML classification onto the profile pictures and predicts the Age/Gender of the influencer.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Software developer as a Freelancer</h3>
+                        <p>January 2021 - October 2021</p>
+                        <p>
+                            Responsibilities: Assisting in data collection and
+                            preliminary analysis.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Masters of Data Science</h3>
+                                <p>Deakin University</p>
+                            </div>
+                            <div class="col-6 d-flex flex-column align-items-end">
+                                <p>2022 - 2024</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Bachelor of Science (Statistics)</h3>
+                                <p>Maharaja Sayajirao University of Baroda</p>
+                            </div>
+                            <div class="col-6 d-flex flex-column align-items-end">
+                                <p>2018 - 2021</p>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </section>
+            <section id="contact-section">
+            <h2>Contact Me</h2>
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="django-submit">
+                        <button type="submit" class="button-submit">Send</button>
+                    </div>
+                </form>
+
+                {% if form.is_valid %}
+                    <p>Thank you! Your message has been sent.</p>
+                {% endif %}
+                
+                </section>
+            <footer>
+                <p>&copy; 2024 Aditya Rajgor. All rights reserved.</p>
+            </footer>
+        </div>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

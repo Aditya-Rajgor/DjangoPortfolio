@@ -1,0 +1,327 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: aileron, sans-serif;
+    line-height: 1.6;
+    background: black;
+    /* Light gray background */
+    background-size: cover;
+    background-position: center;
+}
+/* Define the font-face */
+@font-face {
+    font-family: 'MyFont';
+    src: url("MonaspaceArgon-Medium.woff2") format('woff2'),
+    url("MonaspaceArgon-Medium.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: "MyFont", sans-serif;
+}
+
+/* Container for centering and padding */
+.container {
+    width: 60%;
+    margin: 2% auto 2%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Style for the circular image */
+.image-container {
+    text-align: center;
+    /* Center the image container */
+    margin-bottom: 20px;
+    /* Space below the image */
+}
+
+.rounded-circle {
+    width: 200px;
+    /* Set width of the image */
+    height: 200px;
+    /* Set height of the image */
+    object-fit: cover;
+    /* Ensure image covers the area */
+    object-position: 0px -30px;
+}
+
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+}
+
+section h2 {
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: Consolas;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section p {
+    color: white;
+   
+}
+
+/* Horizontal line between sections */
+section:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+
+/* Style for list items in each section to highlight entries */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #282120;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ul li p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: white;
+}
+
+/* Remove list bullets */
+ul li::before {
+    content: "";
+}
+
+/* Container for social links */
+.social-links {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    /* Space between icons */
+    padding: 20px;
+}
+
+/* Style for social icons */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    /* Set icon size */
+    height: 40px;
+    background-color: #282120;
+    /* Dark background for the icon */
+    color: #fff;
+    /* Light color for the icon */
+    text-align: center;
+    /* Center icon */
+    line-height: 40px;
+    /* Center icon vertically */
+    border-radius: 20%;
+    /* Circular shape */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.social-icon i {
+    font-size: 20px;
+    /* Set icon size */
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    background-color: #666;
+    /* Light up background on hover */
+    color: #fff;
+    /* Ensure text color remains light */
+}
+
+/* Styles for skills subsections */
+.skills-category {
+    padding: 15px;
+    background-color: #282120;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skills-category ul {
+    padding-left: 0;
+}
+
+.skills-category ul li {
+    background: none;
+    border: none;
+    padding: 0px 0;
+    margin: 2px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: none;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.link-icon {
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.link-icon:hover {
+    transform: scale(1.1);
+    color: darkcyan;
+}
+
+.contact-form {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #282120;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+#work-experience ul li {
+    background-color: black;
+    border: none;
+}
+
+#education ul li {
+    background-color: black;
+    border: none;
+}
+
+.django-submit .button-submit {
+    margin-top: 0px;
+    background-color: #666;
+    border: black;
+    transition: transform 0.3s;
+}
+
+.django-submit .button-submit:hover {
+    background-color: darkcyan;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    .col-md-8,
+    .col-md-4 {
+        /* Stack columns vertically on smaller screens */
+        width: 100% !important;
+    }
+
+    .rounded-circle {
+        width: 120px;
+        /* Smaller width for mobile */
+        height: 120px;
+        /* Smaller height for mobile */
+    }
+}
