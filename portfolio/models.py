@@ -7,6 +7,8 @@ class Project(models.Model):
     created_date = models.DateField()
     status = models.CharField(max_length=100)
     github = models.CharField(max_length=300)
+    linkedin = models.CharField(max_length=300)
+    photo = models.CharField(max_length=500)
 
     def __str__(self):
         return self.title
