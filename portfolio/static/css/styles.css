@@ -339,4 +339,20 @@ ul li::before {
         height: 120px;
         /* Smaller height for mobile */
     }
+    .card {
+        width: 80px;
+        /* Smaller width for mobile screens */
+        margin: 5px auto;
+        /* Maintain margin around cards */
+    }
+    .card-img-top {
+        width: 40px;
+        /* Smaller image width for mobile */
+        height: 40px;
+        /* Smaller image height for mobile */
+    }
+    .card-title {
+        font-size: 10px;
+        /* Smaller title font size for mobile */
+    }
 }
