@@ -180,39 +180,6 @@ ul li::before {
     /* Ensure text color remains light */
 }
 
-/* Styles for skills subsections */
-.skills-category {
-    padding: 15px;
-    background-color: #282120;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.skills-category h3 {
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.skills-category ul {
-    padding-left: 0;
-}
-
-.skills-category ul li {
-    background: none;
-    border: none;
-    padding: 0px 0;
-    margin: 2px;
-    font-size: 1em;
-    font-family: 'Arial', sans-serif;
-    box-shadow: none;
-    color: white;
-}
 
 .social-icons {
     display: flex;
@@ -242,6 +209,54 @@ ul li::before {
     color: darkcyan;
 }
 
+.skill-btn {
+    background-color: #282120;
+    font-family: 'MyFont', monospace;
+    color: white;
+}
+
+.skill-btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.skill-cards {
+    display: none;
+}
+
+.card {
+    width: 150px;
+    /* Adjusted width for smaller cards */
+    margin: auto;
+    /* Center the cards within their columns */
+    background-color: #282120;
+    font-family: 'MyFont', monospace;
+    color: white;
+}
+
+.card:not(:first-child) {
+    margin-left: 0px;
+    /* Center all cards except the first */
+}
+.card-img-top {
+    width: 80px;
+    /* Adjusted width for smaller images */
+    height: 80px;
+    /* Adjusted height for smaller images */
+    object-fit: contain;
+    margin-top: 15px;
+    /* Add some margin to the top */
+}
+
+.card-body {
+    padding: 10px;
+    /* Reduced padding for a compact card size */
+}
+
+.card-title {
+    font-size: 14px;
+    /* Smaller font size for titles */
+}
 .contact-form {
     margin-top: 25px;
     padding: 20px;

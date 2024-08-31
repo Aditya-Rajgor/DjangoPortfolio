@@ -69,37 +69,226 @@
                     {% endfor %}
                 </ul>
             </section>
-            <section id="skills">
+            <section id-="skills-box">
                 <h2>Skills</h2>
-                <div class="skills-category">
-                    <h3 class="programming-languages">Programming Languages</h3>
-                    <ul>
-                        {% for skill in skills %}
-                        {% if skill.category == 'Programming Languages' %}
-                        <li>{{ skill.name }}</li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3 class="tools">Tools</h3>
-                    <ul>
-                        {% for skill in skills %}
-                        {% if skill.category == 'Tools' %}
-                        <li>{{ skill.name }}</li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3 class="soft-skills">Soft Skills</h3>
-                    <ul>
-                        {% for skill in skills %} {% if skill.category == 'Soft Skills' %}
-                        <li>{{ skill.name }}</li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
+                    <div class="text-left m-0 p-0">
+                    <button class="btn m-1 skill-btn" onclick="showSkills('programming')" id="default-skill-btn">Languages</button>
+                    <button class="btn m-1 skill-btn" onclick="showSkills('tools')">Development Tools</button>
+                    <button class="btn m-1 skill-btn" onclick="showSkills('web-hosting')">Web Hosting</button>
+                    <button class="btn m-1 skill-btn" onclick="showSkills('backends')">Backends</button>
+                    <button class="btn m-1 skill-btn" onclick="showSkills('softskills')">Soft Skills</button>
+                    
+                    <!-- Programming Languages -->
+                    <div id="programming" class="row skill-cards">
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top mx-auto mt-3" alt="Python">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Python</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">JavaScript</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">R</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">HTML</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">CSS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">C#</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">SQL</h5>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Markdown</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Tools -->
+                    <div id="tools" class="row skill-cards">
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/color/96/000000/git.png" class="card-img-top mx-auto mt-3" alt="Git">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Git</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=315A6B" class="card-img-top mx-auto mt-3" alt="Git">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">GitHub</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Jupyter</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Linux</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/color/96/000000/docker.png" class="card-img-top mx-auto mt-3" alt="Docker">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Docker</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backends -->
+                    <div id="backends" class="row skill-cards">
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" class="card-img-top mx-auto mt-3" alt="Django">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Django</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Flask">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Flask</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Node JS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Streamlit</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Hosting -->
+                    <div id="web-hosting" class="row skill-cards">
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://banner2.cleanpng.com/20180617/lay/kisspng-pythonanywhere-django-web-hosting-service-github-5b26f3914f1633.558122111529279377324.jpg" class="card-img-top mx-auto mt-3" alt="Django">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Pythonanywhere</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://logowik.com/content/uploads/images/replit4759.logowik.com.webp" class="card-img-top mx-auto mt-3" alt="Flask">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Replit</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://www.svgrepo.com/show/353449/aws-ec2.svg" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">AWS EC2</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://porkbun.com/images/porkbun-logo-1200x1200.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Porkbun</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=31085&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Heroku</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div id="softskills" class="row skill-cards">
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/color/96/000000/teamwork.png" class="card-img-top mx-auto mt-3" alt="Teamwork">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Teamwork</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 m-2">
+                            <div class="card">
+                                <img src="https://img.icons8.com/color/96/000000/leadership.png" class="card-img-top mx-auto mt-3" alt="Leadership">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Leadership</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </section>
             <section id="work-experience">
                 <h2>Work Experience</h2>
@@ -178,6 +367,8 @@
                 <p>&copy; 2024 Aditya Rajgor. All rights reserved.</p>
             </footer>
         </div>
+        <script src="{% static 'js/home.js' %}">
+        </script>
         <!-- Bootstrap JS and dependencies -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
