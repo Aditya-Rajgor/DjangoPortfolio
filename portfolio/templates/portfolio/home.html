@@ -68,9 +68,9 @@
                 
                 {% for project in projects %}
                 <div class="container-fixed-height">
-                <div class="row flex-fill">
+                <div class="row flex-fill main-row">
                     <!-- First Column: 2/3 width -->
-                    <div class="col-12 d-flex flex-column pro-col-1">
+                    <div class="col-md-8 d-flex flex-column pro-col-1">
                     <div class="col-1-row-outer">
                         <div class="col-1-row-1">
                             <h3>{{ project.title }}</h3>
@@ -87,7 +87,7 @@
                     </div>
                     </div>
                     <!-- Second Column: 1/3 width -->
-                    <div class="col-12 d-flex flex-column pro-col-2">
+                    <div class="col-md-4 d-flex flex-column pro-col-2">
                         <div class="col-2-row-outer">
                             <div class="col-2-row-1">{{ project.status }} 2024</div>
                             <div class="col-2-row-2"><img src="{{ project.photo }}" alt="covid-19"></div>
