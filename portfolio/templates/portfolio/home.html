@@ -39,21 +39,32 @@
                     </a>
                 </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-2">
+                <div class=" col-md-4col-xs-2 col-sm-2">
                     <div class="image-container">
                         <img src="{% static 'profile-pic.jpg' %}" alt="Profile Picture" class="rounded-circle">
                     </div>
                 </div>
             </div>
             <section id="introduction">
-                <h2>About Me</h2>
-                <p>
-                   
+                <div class="focus-container">
+                    <a class="focus-button" href="#introduction"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
+                    <h2>About Me</h2>
+                </div>
+                <p class="about-text">
+                   Hello! I'm a passionate data enthusiast with a journey that started unexpectedly during the COVID-19 lockdown. While stuck in my hometown for two years, I decided to learn Python and quickly fell in love with programming. I spent my time building personal projects, like a COVID-19 Twitter web app that utilized the Twitter API to filter tweets based on user-selected criteria. This hands-on experience fueled my curiosity and drive to learn more.
+                   <br><br>From there, I ventured into freelancing, specializing in web scraping. My attention to detail and commitment to delivering quality work led to many repeat clients and exciting projects over the course of a year. This experience not only honed my technical skills but also taught me the value of communication and understanding client needs.
+                   <br><br>Seeking to expand my knowledge, I moved to Melbourne to pursue further studies in Data Science. I completed my course in June 2024, and I'm now looking for an opportunity to apply my skills in a data-driven role. During my studies, I also worked part-time as a face-to-face fundraiser, which helped me build confidence, resilience, and excellent communication skills.
+                   <br><br>Now, I’m excited to bring my passion for data and problem-solving to a team where I can continue learning, growing, and making an impact. 
                 </p>
+                <button class="read-more-btn">Read More</button>
+                
             </section>
 
             <section id="projects">
-                <h2>Projects</h2>
+                <div class="focus-container">
+                    <a class="focus-button" href="#projects"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
+                    <h2>Projects</h2>
+                </div>
                 <ul>
                     {% for project in projects %}
                     <li>
@@ -67,8 +78,11 @@
                     {% endfor %}
                 </ul>
             </section>
-            <section id-="skills-box">
-                <h2>Skills</h2>
+            <section id="skills">
+                <div class="focus-container">
+                    <a class="focus-button" href="#skills"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
+                    <h2>Skills</h2>
+                </div>
                     <div class="text-left m-0 p-0">
                     <button class="btn m-1 skill-btn" onclick="showSkills('programming')" id="default-skill-btn">Languages</button>
                     <button class="btn m-1 skill-btn" onclick="showSkills('tools')">Development Tools</button>
@@ -77,8 +91,8 @@
                     <button class="btn m-1 skill-btn" onclick="showSkills('softskills')">Soft Skills</button>
                     
                     <!-- Programming Languages -->
-                    <div id="programming" class="row skill-cards">
-                        <div class="col-md-2 col-sm-2 m-2">
+                    <div id="programming" class="row skill-cards justify-content-start">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top mx-auto mt-3" alt="Python">
                                 <div class="card-body text-center">
@@ -86,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -94,7 +108,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -102,7 +116,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -110,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -118,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -126,7 +140,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -134,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="col-md-2 col-sm-2 m-2">
+                    <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -146,7 +160,7 @@
 
                     <!-- Development Tools -->
                     <div id="tools" class="row skill-cards">
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/git.png" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
@@ -154,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=315A6B" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
@@ -162,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
@@ -170,7 +184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
@@ -178,7 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/docker.png" class="card-img-top mx-auto mt-3" alt="Docker">
                                 <div class="card-body text-center">
@@ -190,7 +204,7 @@
 
                     <!-- Backends -->
                     <div id="backends" class="row skill-cards">
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" class="card-img-top mx-auto mt-3" alt="Django">
                                 <div class="card-body text-center">
@@ -198,7 +212,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Flask">
                                 <div class="card-body text-center">
@@ -206,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
@@ -214,7 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -226,7 +240,7 @@
 
                     <!-- Web Hosting -->
                     <div id="web-hosting" class="row skill-cards">
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://banner2.cleanpng.com/20180617/lay/kisspng-pythonanywhere-django-web-hosting-service-github-5b26f3914f1633.558122111529279377324.jpg" class="card-img-top mx-auto mt-3" alt="Django">
                                 <div class="card-body text-center">
@@ -234,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://logowik.com/content/uploads/images/replit4759.logowik.com.webp" class="card-img-top mx-auto mt-3" alt="Flask">
                                 <div class="card-body text-center">
@@ -242,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://www.svgrepo.com/show/353449/aws-ec2.svg" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -250,7 +264,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://porkbun.com/images/porkbun-logo-1200x1200.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -258,7 +272,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=31085&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
@@ -269,7 +283,7 @@
                     </div>
                     <!-- Soft Skills -->
                     <div id="softskills" class="row skill-cards">
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/teamwork.png" class="card-img-top mx-auto mt-3" alt="Teamwork">
                                 <div class="card-body text-center">
@@ -277,7 +291,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-2 m-2">
+                        <div class="col-auto mt-2 mb-2">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/leadership.png" class="card-img-top mx-auto mt-3" alt="Leadership">
                                 <div class="card-body text-center">
@@ -289,7 +303,10 @@
                     </div>
             </section>
             <section id="work-experience">
+                <div class="focus-container">
+                    <a class="focus-button" href="#work-experience"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
                 <h2>Work Experience</h2>
+                </div>
                 <ul>
                     <li>
                         <h3>Team Leader at Dynamic Outreach</h3>
@@ -318,7 +335,10 @@
             </section>
 
             <section id="education">
+                <div class="focus-container">
+                    <a class="focus-button" href="#education"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
                 <h2>Education</h2>
+                </div>
                 <ul>
                     <li>
                         <div class="row">
@@ -347,7 +367,10 @@
                 </ul>
             </section>
             <section id="contact-section">
+                <div class="focus-container">
+                    <a class="focus-button" href="#contact-section"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
             <h2>Contact Me</h2>
+            </div>
                 <form method="post" class="contact-form">
                     {% csrf_token %}
                     {{ form.as_p }}
