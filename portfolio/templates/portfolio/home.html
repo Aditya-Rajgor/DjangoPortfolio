@@ -52,10 +52,10 @@
                     <h2>About Me</h2>
                 </div>
                 <p class="about-text">
-                   Hello! I'm a passionate data enthusiast with a journey that started unexpectedly during the COVID-19 lockdown. While stuck in my hometown for two years, I decided to learn Python and quickly fell in love with programming. I spent my time building personal projects, like a COVID-19 Twitter web app that utilized the Twitter API to filter tweets based on user-selected criteria. This hands-on experience fueled my curiosity and drive to learn more.
-                   <br><br>From there, I ventured into freelancing, specializing in web scraping. My attention to detail and commitment to delivering quality work led to many repeat clients and exciting projects over the course of a year. This experience not only honed my technical skills but also taught me the value of communication and understanding client needs.
-                   <br><br>Seeking to expand my knowledge, I moved to Melbourne to pursue further studies in Data Science. I completed my course in June 2024, and I'm now looking for an opportunity to apply my skills in a data-driven role. During my studies, I also worked part-time as a face-to-face fundraiser, which helped me build confidence, resilience, and excellent communication skills.
-                   <br><br>Now, I’m excited to bring my passion for data and problem-solving to a team where I can continue learning, growing, and making an impact. 
+                   Hello! I'm a passionate data enthusiast with a journey that started unexpectedly during the COVID-19 lockdown. While stuck in my hometown for two years, I decided to learn Python and quickly fell in love with programming. I spent my time building personal projects, like a COVID-19 Twitter web app that utilized the Twitter API to filter tweets based on user-selected criteria.
+                   <br><br>From there, I ventured into freelancing, specializing in web scraping. My attention to detail and commitment to delivering quality work led to many repeat clients and exciting projects over the course of a year.
+                   <br><br>I moved to Melbourne to pursue further studies in Data Science. I completed my course in July 2024. I am currently working as a face-to-face fundraiser, which helped me build confidence, resilience, and excellent communication skills.
+                   <br><br>Now, I'm excited to bring my passion for data and problem-solving to a team where I can continue learning, growing, and making an impact. 
                 </p>
                 <button class="read-more-btn">Read More</button>
                 
@@ -76,7 +76,7 @@
                         <div class="col-1-row-1">
                             <h3>{{ project.title }}</h3>
                         </div>
-                        <div class="col-1-row-2"><p>{{ project.description }}</p></div>
+                        <div class="col-1-row-2"><p>{{ project.description|linebreaksbr }}</p></div>
                         <div class="col-1-row-3"><h4>Links:&nbsp;</h4>
                             <a href="{{ project.github }}"><i class="fab fa-github link-icon"></i></a>
                                 {% if project.linkedin != "https://www.linkedin.com/in/aditya-rajgor/" %}
@@ -318,6 +318,16 @@
                                     <h5 class="card-title">Leadership</h5>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <div class="card">
+                                    <img src="https://img.icons8.com/?size=100&id=55476&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Music">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Music</h5>
+                                    </div>   
+                                </div>
+                            </a>
                         </div>
                     </div>
                     </div>
