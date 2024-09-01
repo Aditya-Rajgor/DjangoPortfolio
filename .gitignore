@@ -5,3 +5,5 @@ db.sqlite3
 /portfolio/static/monaspace-v1.101
 /portfolio/static/images/profile-pic.jpg
 /portfolio/migrations
+staticfiles
+

@@ -90,7 +90,7 @@
                     <!-- Second Column: 1/3 width -->
                     <div class="col-md-4 d-flex flex-column pro-col-2">
                         <div class="col-2-row-outer">
-                            <div class="col-2-row-1">{{ project.status }} 2024</div>
+                            <div class="col-2-row-1">{{ project.status }} - {{ project.created_date|date:"M, Y"}}</div>
                             <div class="col-2-row-2"><img src="{{ project.photo }}" alt="covid-19"></div>
                     </div>
                     </div>
