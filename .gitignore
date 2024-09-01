@@ -3,5 +3,5 @@ db.sqlite3
 /portfolio/static/image.png
 .env
 /portfolio/static/monaspace-v1.101
-/portfolio/static/js
+/portfolio/static/images/profile-pic.jpg
 /portfolio/migrations

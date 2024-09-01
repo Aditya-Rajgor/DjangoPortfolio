@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
         <title>Aditya Rajgor</title>
         <!-- Font Awesome CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +42,7 @@
                 </div>
                 <div class=" col-md-4 col-xs-2 col-sm-2">
                     <div class="image-container">
-                        <img src="{% static 'profile-pic.jpg' %}" alt="Profile Picture" class="rounded-circle">
+                        <img src="{% static 'images/profile-pic.jpg' %}" alt="Profile Picture" class="rounded-circle">
                     </div>
                 </div>
             </div>
@@ -65,7 +66,7 @@
                     <a class="focus-button" href="#projects"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
                     <h2>Projects</h2>
                 </div>
-                
+     
                 {% for project in projects %}
                 <div class="container-fixed-height">
                 <div class="row flex-fill main-row">
@@ -123,7 +124,7 @@
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">JavaScript</h5>
+                                    <h5 class="card-title">Java<br>Script</h5>
                                 </div>
                             </div>
                         </div>
