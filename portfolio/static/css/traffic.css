@@ -1,0 +1,71 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: aileron, sans-serif;
+    line-height: 1.6;
+    background: black;
+    /* Light gray background */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 60%;
+    margin: 2% auto 2%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Header styles */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container h1 {
+    color: #666;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+}
+
+/* Customize map size */
+#map {
+    /* width: 50%; */
+    /* Adjust width */
+    height: 600px;
+    /* Adjust height */
+    margin: auto;
+    /* Center the map */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    /* Optional: Add a border for styling */
+}

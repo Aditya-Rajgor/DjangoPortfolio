@@ -38,3 +38,16 @@ class Contact(models.Model):
     def __str__(self):
         return f"Message from {self.name}"
     
+class IPDatabase(models.Model):
+    ip_address = models.CharField(max_length=45, unique=True)  # Supports both IPv4 and IPv6
+    timestamp = models.DateTimeField(auto_now_add=True)  # Time of the first visit
+    latitude = models.CharField(max_length=20, blank=True, null=True)
+    longitude = models.CharField(max_length=20, blank=True, null=True)
+    city = models.CharField(max_length=100, blank=True, null=True)
+    org = models.CharField(max_length=300, null=True, blank=True)
+
+    def __str__(self):
+        return self.ip_address
+    
+class Traffic(models.Model):
+    name = models.CharField(max_length=20, unique=True)
