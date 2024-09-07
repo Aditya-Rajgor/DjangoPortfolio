@@ -56,7 +56,7 @@ def home(request):
            
             # Send an email
             subject = form.cleaned_data['subject']
-            message = "message--->" + form.cleaned_data['message'] + "   \nfrom --->" + form.cleaned_data['email']
+            message = "Name--->" + form.cleaned_data['name'] + "   \nfrom --->" + form.cleaned_data['email'] + "    \n" + "message--->" + form.cleaned_data['message']
             from_email = form.cleaned_data['email']
             recipient_list = ['adityarajgor88@gmail.com']  # Replace with your email address
 
