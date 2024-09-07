@@ -8,7 +8,7 @@ docker pull adityadoker/portfolio:version2
 ```
 #### Run the container on 8000 port
 ```
-docker run -it --rm -p 8000:8000 aditya/website
+docker run -it --rm -p 8000:8000 adityadoker/portfolio:version2
 ```
 
 ## OR
