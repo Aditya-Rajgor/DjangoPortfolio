@@ -1,4 +1,7 @@
+import sys
+from unittest import loader
 from django.shortcuts import render
+from django.template import Context
 from .models import Project, Skill, IPDatabase
 from .forms import ContactForm
 from django.core.mail import send_mail
@@ -6,8 +9,11 @@ import folium
 import requests
 from datetime import timedelta
 from django.utils import timezone
-from django.http import HttpResponseForbidden
+from django.http import HttpResponseForbidden, HttpResponseServerError
 import os
+
+def custom_500(request):
+    return render(request, "500.html", status=500)
 
 
 def home(request):

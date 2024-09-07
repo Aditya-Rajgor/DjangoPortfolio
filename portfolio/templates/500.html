@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/traffic.css' %}" />
+    <title>Error 500</title>
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 5%;
+            font-family: aileron, sans-serif;
+            line-height: 1.6;
+            background: black;
+            /* Light gray background */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Define the font-face */
+        @font-face {
+            font-family: 'MyFont';
+            src: url("MonaspaceArgon-Medium.woff2") format('woff2'),
+                url("MonaspaceArgon-Medium.woff2") format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1{
+            font-size: 2.5em;
+            color: white;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: white;
+            font-weight: bold;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Error 500!!!</h1>
+    <h2>Kindly notify <a href="mailto:adityarajgor88@gmail.com">adityarajgor88@gmail.com</a> to fix this! Thanks💙</h2>
+</body>
+</html>

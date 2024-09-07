@@ -75,6 +75,8 @@ TEMPLATES = [
     },
 ]
 
+handler500 = 'portfolio.views.my_custom_error_view'
+
 WSGI_APPLICATION = 'portfolio_website.wsgi.application'
 
 
@@ -137,4 +139,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+
 
