@@ -521,6 +521,29 @@ ul li::before {
     flex-wrap: wrap;
 }
 
+.footer a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+
+.bottom-section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    color:#666;
+}
+
+.horizontalLine {
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
