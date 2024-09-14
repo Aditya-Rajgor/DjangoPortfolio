@@ -10,30 +10,7 @@ docker pull adityadoker/portfolio:version2
 ```
 docker run -it --rm -p 8000:8000 adityadoker/portfolio:version2
 ```
-
-## OR
-
-## Build 
+#### Access the website
 ```
-docker build -t portfolio-docker . 
-```
-
-## OR setup the enviornment
-
-### Create virtualenv
-```
-virtualenv env
-cd env/scripts
-activate
-cd ../..
-```
-
-### Install the dependencies
-```
-pip install -r requirements.txt
-```
-
-### Run the server
-```
-python manage.py runserver 
+http://{docker-local-host}:8000
 ```

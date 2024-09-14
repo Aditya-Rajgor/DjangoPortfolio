@@ -229,11 +229,11 @@ ul li::before {
     height: 40px;
     background-color: #282120;
     /* Dark background for the icon */
-    color: #fff;
+    color: white !important;
     /* Light color for the icon */
     text-align: center;
     /* Center icon */
-    line-height: 40px;
+    line-height: 45px;
     /* Center icon vertically */
     border-radius: 20%;
     /* Circular shape */
@@ -254,23 +254,6 @@ ul li::before {
     /* Light up background on hover */
     color: #fff;
     /* Ensure text color remains light */
-}
-
-
-.social-icons {
-    display: flex;
-    justify-content: left;
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.social-icon {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
     transform: scale(1.1);
 }
 
