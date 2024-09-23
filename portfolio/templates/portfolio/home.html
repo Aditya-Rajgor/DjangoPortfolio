@@ -76,9 +76,12 @@
                         </div>
                         <div class="col-1-row-2"><p>{{ project.description|linebreaksbr }}</p></div>
                         <div class="col-1-row-3"><h4>Links:&nbsp;</h4>
-                            <a href="{{ project.github }}"><i class="fab fa-github link-icon"></i></a>
-                                {% if project.linkedin != "https://www.linkedin.com/in/aditya-rajgor/" %}
-                                    &nbsp;&nbsp;<a href="{{ project.linkedin }}"><i class="fab fa-linkedin link-icon"></i></a>
+                                {% if project.github %}
+                                    <a href="{{ project.github }}"><i class="fab fa-github link-icon"></i></a>
+                                {% endif %}
+                                    <p>&nbsp;</p>
+                                {% if project.linkedin %}
+                                    <a href="{{ project.linkedin }}"><i class="fab fa-linkedin link-icon"></i></a>
                                 {% endif %}
                                     <p>&nbsp;</p>
                             
@@ -215,6 +218,14 @@
                                 <img src="https://img.icons8.com/color/96/000000/docker.png" class="card-img-top mx-auto mt-3" alt="Docker">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Docker</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto mt-2 mb-2">
+                            <div class="card">
+                                <img src="https://i.imgur.com/YVgoksg.png" class="card-img-top mx-auto mt-3" alt="API">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">APIs</h5>
                                 </div>
                             </div>
                         </div>

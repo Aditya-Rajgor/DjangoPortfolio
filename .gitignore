@@ -9,3 +9,5 @@ staticfiles/
 portfolio_website/staticfiles
 ./staticfiles
 /staticfiles
+/portfolio/linkedin-util.py
+/portfolio/linkedin.ipynb

@@ -153,3 +153,6 @@ def admin_traffic_view(request):
     map_html = m._repr_html_()
 
     return render(request, 'admin/traffic.html', {'map': map_html, 'total_ips': total_ips})
+
+def linkedin_pp(request):
+    return render(request, 'portfolio/linkedin-privacy-policy.html')

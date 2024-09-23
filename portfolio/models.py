@@ -6,8 +6,8 @@ class Project(models.Model):
     description = models.TextField()
     created_date = models.DateField()
     status = models.CharField(max_length=100)
-    github = models.CharField(max_length=300)
-    linkedin = models.CharField(max_length=300)
+    github = models.CharField(max_length=300, blank=True, null=True)
+    linkedin = models.CharField(max_length=300, blank=True, null=True)
     photo = models.CharField(max_length=500)
 
     def __str__(self):
