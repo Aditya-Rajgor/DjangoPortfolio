@@ -216,7 +216,7 @@ ul li::before {
 .social-links {
     display: flex;
     justify-content: left;
-    gap: 15px;
+    gap: 10px;
     /* Space between icons */
     padding: 20px;
 }
@@ -529,6 +529,44 @@ a:active {
 
 
 /* Responsive adjustments */
+@media (max-width: 408px) {
+
+    header h1 {
+        font-size: 1.8em !important;
+    }
+    .rounded-circle {
+        max-width: 100px !important;
+        /* Smaller width for mobile */
+        max-height: 100px !important;
+        /* Smaller height for mobile */
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 95% !important;
+        padding-bottom: 5px;
+    }
+
+    .focus-button {
+        display: none;
+    }
+
+    .rounded-circle {
+        max-width: 120px;
+        /* Smaller width for mobile */
+        max-height: 120px;
+        /* Smaller height for mobile */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -606,9 +644,11 @@ a:active {
 
 }
 
+
+
 @media (max-width: 1024px) {
 
     .container {
-        width: 80% !important;
+        width: 80%;
     }
 }
