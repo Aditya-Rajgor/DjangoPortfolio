@@ -84,6 +84,7 @@ header p {
     font-style: italic;
 }
 
+
 /* Style for the circular image */
 .image-container {
     text-align: center;
@@ -93,9 +94,9 @@ header p {
 }
 
 .rounded-circle {
-    width: 200px;
+    width: 160px;
     /* Set width of the image */
-    height: 200px;
+    height: 160px;
     /* Set height of the image */
     object-fit: cover;
     /* Ensure image covers the area */
@@ -107,7 +108,7 @@ header p {
 }
 
 .rounded-circle:hover {
-    box-shadow: 0px 0 0px 40px #333;
+    box-shadow: 0px 0 0px 30px #333;
 }
 
 
@@ -254,7 +255,7 @@ ul li::before {
     /* Light up background on hover */
     color: #fff;
     /* Ensure text color remains light */
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .link-icon {
@@ -275,16 +276,17 @@ ul li::before {
 }
 
 .skill-btn:hover {
-    background-color: #666;
+    background-color: #333;
     color: white;
 }
 
 .skill-cards {
     display: flex;
     flex-wrap:wrap;
-    column-gap:0px;
-    padding: 0px;
+    /* column-gap:0px; */
+    /* padding: 0px; */
 }
+
 
 .card {
     width: 150px;
@@ -295,6 +297,11 @@ ul li::before {
     background-color: #282120;
     font-family: 'MyFont', monospace;
     color: white;
+}
+
+/* card href */
+.card:hover {
+    background-color: #333;
 }
 
 .card:not(:first-child) {
@@ -346,7 +353,6 @@ ul li::before {
 }
 
 .contact-form button {
-    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -354,9 +360,11 @@ ul li::before {
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #45a049;
+.send-img {
+    width: 20px;
+    height: 20px;
 }
+
 
 #work-experience ul li {
     background-color: black;
@@ -369,14 +377,16 @@ ul li::before {
 }
 
 .django-submit .button-submit {
+    font-size: larger;
     margin-top: 0px;
-    background-color: #666;
+    background-color: #333;
     border: black;
     transition: transform 0.3s;
+
 }
 
 .django-submit .button-submit:hover {
-    background-color: darkcyan;
+    background-color: #666;
 }
 
 
@@ -398,9 +408,7 @@ ul li::before {
     flex: 2;
     /* Takes up 2/3 of the container width */
     padding-right: 0px;
-    margin: 20px;
-    
-    
+    margin: 20px 20px 5px 20px;
 }
 
 .pro-col-2 {
@@ -475,6 +483,7 @@ ul li::before {
 .col-1-row-3 {
     flex: 1;
     align-items:end;
+    padding-top: 5px;
 }
 
 .col-2-row-1 {
@@ -529,6 +538,15 @@ a:active {
 
 
 /* Responsive adjustments */
+
+@media (max-width: 376px) {
+    .break-376 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
 @media (max-width: 408px) {
 
     header h1 {
@@ -539,6 +557,20 @@ a:active {
         /* Smaller width for mobile */
         max-height: 100px !important;
         /* Smaller height for mobile */
+    }
+
+    .send-img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .django-submit .button-submit {
+        font-size: smaller !important;
+    }
+
+    .error-mail {
+        font-size: small;
+        padding-left: 50px !important;
     }
 }
 
@@ -555,14 +587,28 @@ a:active {
     }
 
     .rounded-circle {
-        max-width: 120px;
+        max-width: 100px !important;
         /* Smaller width for mobile */
-        max-height: 120px;
+        max-height: 100px !important;
         /* Smaller height for mobile */
     }
 
     header h1 {
         font-size: 2em;
+    }
+
+    .django-submit .button-submit {
+        font-size: smaller;
+    }
+
+    .error-mail {
+        font-size: small;
+        padding-left: 40px !important;
+    }
+
+    .send-img {
+        width: 10px;
+        height: 10px;
     }
 }
 
@@ -583,9 +629,9 @@ a:active {
     }
 
     .rounded-circle {
-        width: 120px;
+        max-width: 120px;
         /* Smaller width for mobile */
-        height: 120px;
+        max-height: 120px;
         /* Smaller height for mobile */
     }
 
@@ -640,6 +686,20 @@ a:active {
 
     .pro-col-1 {
         flex: 5 0 85%;
+    }
+
+    .django-submit .button-submit {
+        font-size: small;
+    }
+
+    .error-mail {
+        font-size: small;
+        padding-left: 25px;
+    }
+
+    .send-img {
+        width: 13px;
+        height: 13px;
     }
 
 }

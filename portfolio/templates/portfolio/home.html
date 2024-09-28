@@ -16,28 +16,28 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 break-376">
                     <header>
                         <h1>Aditya Rajgor</h1>
                         <p>Welcome to my portfolio.</p>
                         <p><i class="fa-solid fa-location-dot"></i></i> Melbourne, Australia</p>
                     </header>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/aditya-rajgor" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:adityarajgor88@gmail.com" target="_blank" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/aditya-rajgor" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="tel:+61478546082" target="_blank" class="social-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aditya-rajgor" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:me@adityarajgor.com" target="_blank" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/aditya-rajgor" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+61478546082" target="_blank" class="social-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
                 </div>
-                </div>
-                <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 break-376">
                     <div class="image-container">
                         <img src="{% static 'images/profile-pic.jpg' %}" alt="Profile Picture" class="rounded-circle image-fluid">
                     </div>
@@ -104,227 +104,288 @@
                     <a class="focus-button" href="#skills"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
                     <h2>Skills</h2>
                 </div>
-                    <div class="text-left m-0 p-0">
-                    <button class="btn m-1 skill-btn" onclick="showSkills('programming')" id="default-skill-btn">Languages</button>
-                    <button class="btn m-1 skill-btn" onclick="showSkills('tools')">Development Tools</button>
-                    <button class="btn m-1 skill-btn" onclick="showSkills('web-hosting')">Cloud Hosting</button>
-                    <button class="btn m-1 skill-btn" onclick="showSkills('backends')">Backends</button>
-                    <button class="btn m-1 skill-btn" onclick="showSkills('softskills')">Soft Skills</button>
+                    <div class="text-left m-0 p-0 ">
+                    <button class="btn m-0 mr-3 mb-2 skill-btn" onclick="showSkills('programming')" id="default-skill-btn">Languages</button>
+                    <button class="btn m-0 mr-3 mb-2 skill-btn" onclick="showSkills('web-hosting')">Cloud Hosting</button>
+                    <button class="btn m-0 mr-3 mb-2 skill-btn" onclick="showSkills('backends')">Backends</button>
+                    <button class="btn m-0 mr-3 mb-2 skill-btn" onclick="showSkills('tools')">Development Tools</button>
+                    <button class="btn m-0 mr-3 mb-2 skill-btn" onclick="showSkills('softskills')">Soft Skills</button>
                     
                     <!-- Programming Languages -->
                     <div id="programming" class="row skill-cards justify-content-start">
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.python.org/">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top mx-auto mt-3" alt="Python">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Python</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.java.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Java">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Java<br>Script</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.r-project.org/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">R</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://html.com/html5/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="HTML5">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">HTML</h5>
+                                    <h5 class="card-title">HTML5</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.w3.org/Style/CSS/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="CSS">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">CSS</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview">
                             <div class="card">
-                                <img src="https://i.imgur.com/fhIOYLK.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://i.imgur.com/fhIOYLK.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="C#">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">C#</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.w3schools.com/sql/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="SQL">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">SQL</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                    <div class="col-auto mt-2 mb-2">
+                        <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.markdownguide.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Markdown">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Markdown</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
+                   
                     </div>
 
                     <!-- Development Tools -->
                     <div id="tools" class="row skill-cards">
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://git-scm.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/git.png" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Git</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://github.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=315A6B" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">GitHub</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://jupyter.org/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Jupyter</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.linux.org/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Linux</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.docker.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/color/96/000000/docker.png" class="card-img-top mx-auto mt-3" alt="Docker">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Docker</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.w3schools.com/js/js_api_intro.asp">
                             <div class="card">
                                 <img src="https://i.imgur.com/YVgoksg.png" class="card-img-top mx-auto mt-3" alt="API">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">APIs</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Backends -->
                     <div id="backends" class="row skill-cards">
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.djangoproject.com/">
                             <div class="card">
                                 <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" class="card-img-top mx-auto mt-3" alt="Django">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Django</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://flask.palletsprojects.com/en/3.0.x/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Flask">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Flask</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://nodejs.org/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Node JS</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://streamlit.io/">
                             <div class="card">
                                 <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Streamlit</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://mailcow.email/">
                             <div class="card">
-                                <img src="https://i.imgur.com/zo1q048.png"  class="card-img-top mx-auto mt-3" alt="Amazon API Gateway">
+                                <img src="https://i.imgur.com/toyPAPL.png"  class="card-img-top mx-auto mt-3" alt="MailCow">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">AWS API Gateway</h5>
+                                    <h5 class="card-title">MailCow</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Web Hosting -->
                     <div id="web-hosting" class="row skill-cards">
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://aws.amazon.com/">
                             <div class="card">
-                                <img src="https://www.svgrepo.com/show/353449/aws-ec2.svg" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="AWS">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">AWS EC2</h5>
+                                    <h5 class="card-title">AWS</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.pythonanywhere.com/">
                             <div class="card">
-                                <img src="https://banner2.cleanpng.com/20180617/lay/kisspng-pythonanywhere-django-web-hosting-service-github-5b26f3914f1633.558122111529279377324.jpg" class="card-img-top mx-auto mt-3" alt="Django">
+                                <img src="https://i.imgur.com/NiImwVy.png" class="card-img-top mx-auto mt-3" alt="Pythonanywhere">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Pythonanywhere</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://replit.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=FnhiFHcPQyOa&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Replit">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Replit</h5>
                                 </div>
                             </div>
+                            </a>
+                        </div>
+                        <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.cloudflare.com/">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=13682&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Cloudflare">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Cloudflare</h5>
+                                </div>
+                            </div>
+                            </a>
                         </div>
 
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://porkbun.com/">
                             <div class="card">
-                                <img src="https://porkbun.com/images/porkbun-logo-1200x1200.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://porkbun.com/images/porkbun-logo-1200x1200.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Porkbun">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Porkbun</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.heroku.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=31085&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Heroku">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Heroku</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-auto mt-2 mb-2">
+                            <a href="https://www.linode.com/">
                             <div class="card">
                                 <img src="https://img.icons8.com/?size=100&id=20786&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Linode">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Linode</h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Soft Skills -->
@@ -445,8 +506,13 @@
                 <form method="post" class="contact-form">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <div class="django-submit">
-                        <button type="submit" class="button-submit">Send</button>
+                    <div class="row d-flex justify-content-start">
+                        <div class="col-3 django-submit">
+                            <button type="submit" class="button-submit ">Send <img src="https://img.icons8.com/?size=100&id=RHtRRB1E4DKI&format=png&color=FFFFFF" alt="Icon" class="send-img"></button>
+                        </div>
+                        <div class="col-7 align-self-end">
+                            <p class="error-mail">Error?!? please drop a mail to <a href="mail:me@adityarajgor.com">me@adityarajgor.com</a></p>
+                        </div>
                     </div>
                 </form>
 
