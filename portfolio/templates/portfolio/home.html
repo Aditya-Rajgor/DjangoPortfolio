@@ -69,32 +69,47 @@
                 <div class="container-fixed-height">
                 <div class="row flex-fill main-row">
                     <!-- First Column: 2/3 width -->
-                    <div class="col-md-8 d-flex flex-column pro-col-1">
-                    <div class="col-1-row-outer">
-                        <div class="col-1-row-1">
-                            <h3>{{ project.title }}</h3>
+                     <div class="popup-container">
+                        <div class="col-auto d-flex flex-column pro-col-1">
+                            <div class="col-1-row-outer">
+                                <div class="col-1-row-1">
+                                    <h3>{{ project.title }}</h3>
+                                </div>
+                                <div class="col-1-row-2"><p>{{ project.description|linebreaksbr }}</p></div>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-2">
+                                                <h4 id="break-768">Links:&nbsp;</h4>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-xs-10">
+                                                {% if project.github %}
+                                                    <a href="{{ project.github }}" class="link-icon-768"><i class="fab fa-github link-icon"></i></a>
+                                                {% endif %}
+                                                    {{ empty }}
+                                                {% if project.linkedin %}
+                                                    <a href="{{ project.linkedin }}" class="link-icon-768"><i class="fab fa-linkedin link-icon"></i></a>
+                                                {% endif %}
+                                                    {{empty}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" id="status-id">{{ project.status }} - {{ project.created_date|date:"M, Y"}}</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-1-row-2"><p>{{ project.description|linebreaksbr }}</p></div>
-                        <div class="col-1-row-3"><h4>Links:&nbsp;</h4>
-                                {% if project.github %}
-                                    <a href="{{ project.github }}"><i class="fab fa-github link-icon"></i></a>
-                                {% endif %}
-                                    <p>&nbsp;</p>
-                                {% if project.linkedin %}
-                                    <a href="{{ project.linkedin }}"><i class="fab fa-linkedin link-icon"></i></a>
-                                {% endif %}
-                                    <p>&nbsp;</p>
-                            
+                        <!-- adding image popup -->
+                        <div class="popup">
+                            <img src="{{ project.photo }}" alt="Project Image">
                         </div>
-                    </div>
                     </div>
                     <!-- Second Column: 1/3 width -->
-                    <div class="col-md-4 d-flex flex-column pro-col-2">
+                    <!-- <div class="col-md-4 d-flex flex-column pro-col-2">
                         <div class="col-2-row-outer">
                             <div class="col-2-row-1">{{ project.status }} - {{ project.created_date|date:"M, Y"}}</div>
                             <div class="col-2-row-2"><img src="{{ project.photo }}" alt="covid-19"></div>
                     </div>
-                    </div>
+                    </div> -->
                 </div>
                 </div>
                 {% endfor %}

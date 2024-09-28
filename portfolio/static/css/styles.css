@@ -332,7 +332,7 @@ ul li::before {
     padding: 20px;
     background-color: #282120;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .contact-form input,
@@ -344,7 +344,7 @@ ul li::before {
     color: white;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .contact-form textarea {
@@ -356,7 +356,7 @@ ul li::before {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -481,9 +481,9 @@ ul li::before {
 }
 
 .col-1-row-3 {
-    flex: 1;
-    align-items:end;
-    padding-top: 5px;
+    /* flex: 1; */
+    /* align-items:end; */
+    /* padding-top: 5px; */
 }
 
 .col-2-row-1 {
@@ -504,13 +504,57 @@ ul li::before {
     width: 90%;
     height: 90%;
     object-fit:cover;
-    border-radius: 12px;
+    border-radius: 8px;
     object-position: left;
     
 }
 .main-row {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+/* popup  project image*/
+/* Container to hold the image and the popup */
+/* Container to hold the image and the popup */
+.popup-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The popup (hidden by default) */
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 95%;
+    /* Position popup above the thumbnail */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the popup horizontally */
+    z-index: 1;
+    width: 350px;
+    /* Fixed width for the popup image */
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(51, 51, 51, 1); */
+    background-color: rgba(51, 51, 51, 1);
+}
+
+/* The popup image */
+.popup img {
+    object-fit: contain;
+    width: 100%;
+    /* Make the image fill the popup width */
+    /* height: auto; */
+    /* Maintain aspect ratio */
+    height: 250px;
+    /* Constrain height to fit inside viewport */
+}
+
+/* Show the popup on hover */
+.popup-container:hover .popup {
+    display: block;
 }
 
 .footer a,
@@ -572,6 +616,7 @@ a:active {
         font-size: small;
         padding-left: 50px !important;
     }
+
 }
 
 
@@ -609,6 +654,18 @@ a:active {
     .send-img {
         width: 10px;
         height: 10px;
+    }
+    #break-768 {
+        font-size: small;
+    }
+
+    .link-icon-768 {
+        font-size: x-small !important;
+        padding-left: 2%;
+    }
+
+    #status-id {
+        font-size: x-small !important;
     }
 }
 
@@ -700,6 +757,18 @@ a:active {
     .send-img {
         width: 13px;
         height: 13px;
+    }
+
+    #break-768 {
+        font-size: medium;
+    }
+
+    .link-icon-768 {
+        font-size: small;
+    }
+
+    #status-id {
+        font-size: small;
     }
 
 }
