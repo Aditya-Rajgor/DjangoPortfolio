@@ -213,12 +213,24 @@ ul li::before {
     content: "";
 }
 
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 25px;
+    
+}
+
+.bullet-list li {
+    color: white;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+
 /* Container for social links */
 .social-links {
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    /* Space between icons */
+    /* display: flex; */
+    /* justify-content: left; */
+    /* gap: 10px; */
     padding: 20px;
 }
 
@@ -247,6 +259,30 @@ ul li::before {
 .social-icon i {
     font-size: 20px;
     /* Set icon size */
+}
+.resume-icon {
+    width: 25px;
+    height: auto;
+}
+
+.resume {
+    display: inline-block;
+    background-color: #282120;
+    color: white !important;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none !important;
+    padding: 5px;
+    padding-left: 8px;
+    padding-top: 7px;
+    height: 40px;
+}
+/* Hover effect for social icons */
+.resume:hover {
+    background-color: #666;
+    /* Light up background on hover */
+    color: #fff;
 }
 
 /* Hover effect for social icons */
@@ -379,10 +415,11 @@ ul li::before {
 .django-submit .button-submit {
     font-size: larger;
     margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     background-color: #333;
     border: black;
     transition: transform 0.3s;
-
 }
 
 .django-submit .button-submit:hover {
@@ -667,6 +704,22 @@ a:active {
     #status-id {
         font-size: x-small !important;
     }
+
+    .popup {
+        display: none;
+        position: absolute;
+        width: 250px !important;
+    }
+
+    .popup img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .resume-icon {
+        width: 20px;
+        height: auto;
+    }
+
 }
 
 
@@ -769,6 +822,15 @@ a:active {
 
     #status-id {
         font-size: small;
+    }
+
+    .popup {
+        width: 200px !important;
+    }
+
+    .popup img {
+        width: 100% !important;
+        height: 150px !important;
     }
 
 }

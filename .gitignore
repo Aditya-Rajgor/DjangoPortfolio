@@ -4,6 +4,7 @@ db.sqlite3
 .env
 /portfolio/static/monaspace-v1.101
 /portfolio/static/images/profile-pic.jpg
+/portfolio/static/Aditya-Rajgor-Resume.pdf
 /portfolio/migrations
 staticfiles/
 portfolio_website/staticfiles
