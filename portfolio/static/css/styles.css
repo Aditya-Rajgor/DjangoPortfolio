@@ -679,6 +679,10 @@ a:active {
         font-size: 2em;
     }
 
+    section h2 {
+        font-size: 1.6em;
+    }
+
     .django-submit .button-submit {
         font-size: smaller;
     }
