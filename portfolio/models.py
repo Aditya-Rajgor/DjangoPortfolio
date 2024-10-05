@@ -14,26 +14,12 @@ class Project(models.Model):
         return self.title
     
 
-class Skill(models.Model):
-    CATEGORY_CHOICES = [
-        ('Programming Languages', 'Programming Languages'),
-        ('Tools', 'Tools'),
-        ('Soft Skills', 'Soft Skills'),
-    ]
-
-
-    name = models.CharField(max_length=100)
-    level = models.CharField(max_length=50)
-    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
-
-    def __str__(self):
-        return self.name
-
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     subject = models.CharField(max_length=200)
     message = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     def __str__(self):
         return f"Message from {self.name}"

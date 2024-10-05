@@ -2,7 +2,7 @@ import sys
 from unittest import loader
 from django.shortcuts import render
 from django.template import Context
-from .models import Project, Skill, IPDatabase
+from .models import Project, IPDatabase
 from .forms import ContactForm
 from django.core.mail import send_mail
 import folium
@@ -75,11 +75,10 @@ def home(request):
         form = ContactForm()
 
     projects = Project.objects.all().order_by('-created_date')
-    skills = Skill.objects.all()
         
     context = {
         'form': form,
-        'projects': projects, 'skills': skills
+        'projects': projects,
         # Add other context variables here if needed
     }
         

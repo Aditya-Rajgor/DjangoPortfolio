@@ -100,7 +100,7 @@ header p {
     /* Set height of the image */
     object-fit: cover;
     /* Ensure image covers the area */
-    object-position: 0px -30px;
+    object-position: 0px 0px;
     transition: box-shadow 0.3s ease;
     /* Smooth transition for the shadow effect */
     box-shadow: 0 0 0px rgba(0, 255, 0, 0);
@@ -155,7 +155,8 @@ section:not(:last-of-type) {
     /* Adjust height according to line height */
 }
 
-.read-more-btn {
+.read-more-btn, #loadMoreBtn,
+#collapseBtn {
     background-color: hsl(0, 0%, 20%);
     /* Green */
     color: white;
@@ -175,7 +176,8 @@ section:not(:last-of-type) {
     display: none;
 }
 
-.read-more-btn:hover {
+.read-more-btn:hover, #loadMoreBtn:hover,
+#collapseBtn:hover {
     background-color: #666;
     /* Light up background on hover */
 }
@@ -431,7 +433,7 @@ ul li::before {
 .container-fixed-height {
     max-height: 400px;
     /* Fixed height for the container */
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -439,6 +441,19 @@ ul li::before {
     padding: 5px;
     background-color: #282120;
     font-family: 'Myfont', monospace;
+}
+
+.container-fixed-height.visible {
+    display: flex;
+    /* Make visible when loaded */
+}
+
+
+
+
+#collapseBtn {
+    display: none;
+    /* Initially hidden */
 }
 
 .pro-col-1 {

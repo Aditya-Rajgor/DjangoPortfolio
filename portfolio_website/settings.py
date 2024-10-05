@@ -25,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('DJANGO_APP_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DJANGO_APP_DEBUG")
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1").split()
 
 
 # Application definition
@@ -89,6 +89,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ.get("PG_NAME"),
+#         'USER': os.environ.get("PG_USER"),
+#         'PASSWORD': os.environ.get("PG_PASS"),
+#         'HOST': os.environ.get("PG_HOST"),
+#         'PORT': os.environ.get("PS_PORT"),
+#     }
+# }
 
 
 # Password validation

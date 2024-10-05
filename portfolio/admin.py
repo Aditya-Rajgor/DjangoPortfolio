@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, Skill, IPDatabase, Traffic
+from .models import Project, IPDatabase, Traffic
 from .forms import Contact
 from django.shortcuts import render
 import folium
@@ -11,13 +11,10 @@ from datetime import timedelta
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('title', 'created_date', 'status')
 
-@admin.register(Skill)
-class SkillAdmin(admin.ModelAdmin):
-    list_display = ('name', 'level')
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'subject', 'message')
+    list_display = ('name', 'timestamp', 'email', 'subject', 'message')
 
 @admin.register(IPDatabase)
 class ContactAdmin(admin.ModelAdmin):

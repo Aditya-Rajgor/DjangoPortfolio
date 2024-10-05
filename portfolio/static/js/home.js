@@ -32,3 +32,47 @@ readMoreBtn.addEventListener('click', () => {
     readMoreBtn.textContent = 'Read More';
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectCards = document.querySelectorAll(".container-fixed-height");
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    const collapseBtn = document.getElementById("collapseBtn");
+    let cardsToShow = 3; // Initial number of cards to show
+
+    // Show the first 3 cards
+    projectCards.forEach((card, index) => {
+      if (index < cardsToShow) {
+        card.classList.add("visible");
+      }
+    });
+
+    // Load more functionality
+    loadMoreBtn.addEventListener("click", function () {
+      console.log("load more button clicked")
+      cardsToShow += 2; // Load 3 more cards on each click
+
+      projectCards.forEach((card, index) => {
+        if (index < cardsToShow) {
+          card.classList.add("visible");
+        }
+      });
+
+      // Show collapse button and hide load more if all cards are visible
+      if (cardsToShow >= projectCards.length) {
+        loadMoreBtn.style.display = "none";
+        collapseBtn.style.display = "block";
+      }
+    });
+
+    // Collapse functionality
+    collapseBtn.addEventListener("click", function () {
+      cardsToShow = 3; // Reset number of visible cards to 3
+      projectCards.forEach((card, index) => {
+        if (index >= cardsToShow) {
+          card.classList.remove("visible");
+        }
+      });
+      loadMoreBtn.style.display = "block"; // Show load more button again
+      collapseBtn.style.display = "none";  // Hide collapse button
+    });
+});
