@@ -6,7 +6,8 @@ db.sqlite3
 /portfolio/static/images/profile-pic.jpg
 /portfolio/static/Aditya-Rajgor-Resume.pdf
 /portfolio/migrations
-/portfolio/__pycache__
+/portfolio_website/__pycache__
+portfolio_website/__pycache__
 staticfiles/
 portfolio_website/staticfiles
 ./staticfiles
