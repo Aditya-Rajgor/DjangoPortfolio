@@ -33,7 +33,7 @@ p {
     padding-top: 50px;
     padding-bottom: 40px;
     background-color: black;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
@@ -163,7 +163,7 @@ section:not(:last-of-type) {
     font-family: 'MyFont', monospace;
     font-style: italic;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
     display: block;
@@ -191,13 +191,14 @@ ul {
 ul li {
     background-color: #282120;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul li h3 {
+    font-family: "MyFont", monospace;
     margin-top: 0;
     color: white;
     font-size: 1.2em;
@@ -272,7 +273,7 @@ ul li::before {
     background-color: #282120;
     color: white !important;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none !important;
     padding: 5px;
@@ -296,15 +297,18 @@ ul li::before {
     /* transform: scale(1.1); */
 }
 
+.col-1-row-1 h3 {
+    font-size: larger;
+}
+
 .link-icon {
     font-size: 2em;
     color: white;
-    transition: transform 0.3s;
+
 }
 
 .link-icon:hover {
-    transform: scale(1.1);
-    color: darkcyan;
+    color: #666;
 }
 
 .skill-btn {
@@ -335,6 +339,7 @@ ul li::before {
     background-color: #282120;
     font-family: 'MyFont', monospace;
     color: white;
+    border-radius: 5px;
 }
 
 /* card href */
@@ -370,7 +375,7 @@ ul li::before {
     padding: 20px;
     background-color: #282120;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .contact-form input,
@@ -382,7 +387,7 @@ ul li::before {
     color: white;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .contact-form textarea {
@@ -394,7 +399,7 @@ ul li::before {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -436,7 +441,7 @@ ul li::before {
     display: none;
     flex-wrap: wrap;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-bottom: 18px;
     padding: 5px;
     background-color: #282120;
@@ -523,7 +528,7 @@ ul li::before {
 .col-1-row-2::-webkit-scrollbar-thumb {
     background: #555;
     /* Color of the scrollbar handle */
-    border-radius: 6px;
+    border-radius: 5px;
     /* Rounded corners for the scrollbar handle */
 }
 
@@ -556,7 +561,7 @@ ul li::before {
     width: 90%;
     height: 90%;
     object-fit:cover;
-    border-radius: 8px;
+    border-radius: 5px;
     object-position: left;
     
 }
@@ -588,7 +593,7 @@ ul li::before {
     width: 350px;
     /* Fixed width for the popup image */
     /* border: 2px solid black; */
-    border-radius: 12px;
+    border-radius: 5px;
     /* box-shadow: 0 4px 8px rgba(51, 51, 51, 1); */
     background-color: rgba(51, 51, 51, 1);
 }

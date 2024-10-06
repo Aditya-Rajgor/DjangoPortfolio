@@ -10,11 +10,12 @@ function showSkills(category, button) {
     document.querySelectorAll('.btn').forEach(function (btn) {
         btn.classList.remove('active-btn');
     });
+
 }
 
 // Auto-click the "Programming Languages" button on page load
 window.onload = function () {
-    document.getElementById('default-skill-btn').click();
+    showSkills('programming'); // Show programming skills by default
 };
 
 const readMoreBtn = document.querySelector('.read-more-btn');

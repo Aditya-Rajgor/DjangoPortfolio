@@ -12,5 +12,6 @@ staticfiles/
 
 /portfolio/migrations
 /portfolio_website/__pycache__
+__pycache__
 /portfolio_website/staticfiles
 
