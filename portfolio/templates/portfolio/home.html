@@ -1,609 +1,694 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
-        <title>Aditya Rajgor</title>
-        <!-- Font Awesome CSS -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 break-376">
-                    <header>
-                        <h1>Aditya Rajgor</h1>
-                        <p>Welcome to my portfolio.</p>
-                        <p><i class="fa-solid fa-location-dot"></i></i> Melbourne, Australia</p>
-                    </header>
-                    <div class="social-links row justify-content-left">
-                        <div class="col-auto pr-0 pb-2">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <title>Aditya Rajgor</title>
+    <!-- Font Awesome CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 break-376">
+                <header>
+                    <h1>Aditya Rajgor</h1>
+                    <p>Welcome to my portfolio.</p>
+                    <p><i class="fa-solid fa-location-dot"></i></i> Melbourne, Australia</p>
+                </header>
+                <div class="social-links row justify-content-left">
+                    <div class="col-auto pr-0 pb-2">
                         <a href="https://www.linkedin.com/in/aditya-rajgor" target="_blank" class="social-icon">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        </div>
-                        <div class="col-auto pr-0 pb-2">
+                    </div>
+                    <div class="col-auto pr-0 pb-2">
                         <a href="mailto:me@adityarajgor.com" target="_blank" class="social-icon">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        </div>
-                        <div class="col-auto pr-0 pb-2">
+                    </div>
+                    <div class="col-auto pr-0 pb-2">
                         <a href="https://github.com/aditya-rajgor" target="_blank" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
-                        </div>
-                        <div class="col-auto pr-0 pb-2">
+                    </div>
+                    <div class="col-auto pr-0 pb-2">
                         <a href="tel:+61478546082" target="_blank" class="social-icon">
                             <i class="fa-solid fa-phone"></i>
                         </a>
-                        </div>
-                        <div class="col-auto pr-0 pb-2">
-                        <a href="https://drive.google.com/file/d/1YV1myo_E2fR9YF8b4UtHRGLpb0SAjTn9/view?usp=sharing" target="_blank" class="resume">
-                            Resume
-                            <img src="https://img.icons8.com/?size=100&id=60664&format=png&color=FFFFFF" alt="focus" class="resume-icon">
-                        </a>
-                        </div>
                     </div>
-                    
+                    <div class="col-auto pr-0 pb-2">
+                        <a href="https://drive.google.com/file/d/1YV1myo_E2fR9YF8b4UtHRGLpb0SAjTn9/view?usp=sharing"
+                            target="_blank" class="resume">
+                            Resume
+                            <img src="https://img.icons8.com/?size=100&id=60664&format=png&color=FFFFFF" alt="focus"
+                                class="resume-icon">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 break-376">
-                    <div class="image-container">
-                        <img src="https://www.gravatar.com/avatar/0b85973ee6458097a2a10877ff71a28c44a62039e16308994ab10186899a3af8?s=512&d=https%3A%2F%2Fi.imgur.com%2FMWSRrVR.png" alt="Profile Picture" class="rounded-circle image-fluid">
+
+            </div>
+            <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 break-376">
+                <div class="image-container">
+                    <img src="https://www.gravatar.com/avatar/0b85973ee6458097a2a10877ff71a28c44a62039e16308994ab10186899a3af8?s=512&d=https%3A%2F%2Fi.imgur.com%2FMWSRrVR.png"
+                        alt="Profile Picture" class="rounded-circle image-fluid">
+                </div>
+            </div>
+        </div>
+        <section id="introduction">
+            <div class="focus-container">
+                <a class="focus-button" href="#introduction"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
+                    <h2>About Me</h2>
+                </a>
+            </div>
+            <p class="about-text">
+                Hello! I'm a passionate data enthusiast with a journey that started unexpectedly during the COVID-19
+                lockdown. While stuck in my hometown for two years, I decided to learn Python and quickly fell in love
+                with programming.
+                <br><br>I spent my time building personal projects, like a COVID-19 Twitter web app that utilized the
+                Twitter API to filter tweets based on user-selected criteria.
+                <br><br>From there, I ventured into freelancing, specializing in web scraping. My attention to detail
+                and commitment to delivering quality work led to many repeat clients and exciting projects over the
+                course of a year.
+                <br><br>In 2022, I moved to Melbourne to pursue further studies in Data Science. I completed my course
+                in July 2024. I am currently working as a face-to-face fundraiser, which helped me build confidence,
+                resilience, and excellent communication skills.
+                <br><br>Now, I'm excited to bring my passion for Software development, Data and Problem-solving to a
+                team where I can continue learning, growing, and making an impact.
+            </p>
+            <button class="read-more-btn">Read More</button>
+
+        </section>
+
+        <section id="projects">
+            <div class="focus-container">
+                <a class="focus-button" href="#projects"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
+                    <h2>Projects</h2>
+                </a>
+            </div>
+
+            {% for project in projects %}
+            <div class="container-fixed-height">
+                <div class="row flex-fill main-row">
+                    <!-- First Column: 2/3 width -->
+                    <div class="popup-container">
+                        <div class="col-auto d-flex flex-column pro-col-1">
+                            <div class="col-1-row-outer">
+                                <div class="col-1-row-1">
+                                    <h3>{{ project.title }}</h3>
+                                </div>
+                                <div class="col-1-row-2">
+                                    <p>{{ project.description|linebreaksbr }}</p>
+                                </div>
+                                <div class="row mt-2 justify-content-between pr-4">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                {% if project.github %}
+                                                <a href="{{ project.github }}" class="link-icon-768"><i
+                                                        class="fab fa-github link-icon"></i></a>
+                                                {% endif %}
+                                                {{ empty }}
+                                                {% if project.linkedin %}
+                                                <a href="{{ project.linkedin }}" class="link-icon-768"><i
+                                                        class="fab fa-linkedin link-icon"></i></a>
+                                                {% endif %}
+                                                {{empty}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto" id="status-id">{{ project.status }} - {{project.created_date|date:"M, Y"}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- adding image popup -->
+                        <div class="popup">
+                            <img src="{{ project.photo }}" alt="Project Image">
+                        </div>
                     </div>
                 </div>
             </div>
-            <section id="introduction">
-                <div class="focus-container">
-                    <a class="focus-button" href="#introduction"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
-                    <h2>About Me</h2>
-                </div>
-                <p class="about-text">
-                   Hello! I'm a passionate data enthusiast with a journey that started unexpectedly during the COVID-19 lockdown. While stuck in my hometown for two years, I decided to learn Python and quickly fell in love with programming. 
-                   <br><br>I spent my time building personal projects, like a COVID-19 Twitter web app that utilized the Twitter API to filter tweets based on user-selected criteria.
-                   <br><br>From there, I ventured into freelancing, specializing in web scraping. My attention to detail and commitment to delivering quality work led to many repeat clients and exciting projects over the course of a year.
-                   <br><br>In 2022, I moved to Melbourne to pursue further studies in Data Science. I completed my course in July 2024. I am currently working as a face-to-face fundraiser, which helped me build confidence, resilience, and excellent communication skills.
-                   <br><br>Now, I'm excited to bring my passion for Software development, Data and Problem-solving to a team where I can continue learning, growing, and making an impact. 
-                </p>
-                <button class="read-more-btn">Read More</button>
-                
-            </section>
-
-            <section id="projects">
-                <div class="focus-container">
-                    <a class="focus-button" href="#projects"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
-                    <h2>Projects</h2>
-                </div>
-     
-                {% for project in projects %}
-                <div class="container-fixed-height">
-                    <div class="row flex-fill main-row">
-                        <!-- First Column: 2/3 width -->
-                        <div class="popup-container">
-                            <div class="col-auto d-flex flex-column pro-col-1">
-                                <div class="col-1-row-outer">
-                                    <div class="col-1-row-1">
-                                        <h3>{{ project.title }}</h3>
-                                    </div>
-                                    <div class="col-1-row-2"><p>{{ project.description|linebreaksbr }}</p></div>
-                                    <div class="row mt-2 justify-content-between pr-4">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <!-- <div class="col-md-4 col-sm-4 col-xs-2">
-                                                    <h4 id="break-768">Links:&nbsp;</h4>
-                                                </div> -->
-                                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                                    {% if project.github %}
-                                                        <a href="{{ project.github }}" class="link-icon-768"><i class="fab fa-github link-icon"></i></a>
-                                                    {% endif %}
-                                                        {{ empty }}
-                                                    {% if project.linkedin %}
-                                                        <a href="{{ project.linkedin }}" class="link-icon-768"><i class="fab fa-linkedin link-icon"></i></a>
-                                                    {% endif %}
-                                                        {{empty}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto" id="status-id">{{ project.status }} - {{ project.created_date|date:"M, Y"}}</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- adding image popup -->
-                            <div class="popup">
-                                <img src="{{ project.photo }}" alt="Project Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-                <button id="loadMoreBtn">Load More</button>
-                <button id="collapseBtn">Collapse</button>
-            </section>
-            <section id="skills">
-                <div class="focus-container">
-                    <a class="focus-button" href="#skills"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
+            {% endfor %}
+            <button id="loadMoreBtn">Load More</button>
+            <button id="collapseBtn">Collapse</button>
+        </section>
+        <section id="skills">
+            <div class="focus-container">
+                <a class="focus-button" href="#skills"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
                     <h2>Skills</h2>
-                </div>
-                    <div class="text-left m-0 p-0 ">
-                    <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('programming')">Languages</button>
-                    <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('web-hosting')">Cloud Hosting</button>
-                    <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('backends')">Backends</button>
-                    <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('tools')">Development Tools</button>
-                    <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('softskills')">Soft Skills</button>
-                    
-                    <!-- Programming Languages -->
-                    <div id="programming" class="row skill-cards justify-content-start">
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.python.org/">
+                </a>
+            </div>
+            <div class="text-left m-0 p-0 ">
+                <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('programming')">Languages</button>
+                <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('web-hosting')">Cloud
+                    Hosting</button>
+                <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('backends')">Backends</button>
+                <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('tools')">Development Tools</button>
+                <button class="btn m-0 mr-3 mb-2 skill-btn" onmouseover="showSkills('softskills')">Soft Skills</button>
+
+                <!-- Programming Languages -->
+                <div id="programming" class="row skill-cards justify-content-start">
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.python.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top mx-auto mt-3" alt="Python">
+                                <img src="https://img.icons8.com/color/96/000000/python.png"
+                                    class="card-img-top mx-auto mt-3" alt="Python">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Python</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.java.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.java.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Java">
+                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Java">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Java<br>Script</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.r-project.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.r-project.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">R</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://html.com/html5/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://html.com/html5/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="HTML5">
+                                <img src="https://img.icons8.com/?size=100&id=EAUyKy3IwmqM&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="HTML5">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">HTML5</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.w3.org/Style/CSS/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.w3.org/Style/CSS/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="CSS">
+                                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="CSS">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">CSS</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview">
                             <div class="card">
-                                <img src="https://i.imgur.com/fhIOYLK.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="C#">
+                                <img src="https://i.imgur.com/fhIOYLK.png" style="background: transparent;"
+                                    class="card-img-top mx-auto mt-3" alt="C#">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">C#</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.w3schools.com/sql/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.w3schools.com/sql/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="SQL">
+                                <img src="https://img.icons8.com/?size=100&id=RO6Tm3NdrSGE&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="SQL">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">SQL</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.markdownguide.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.markdownguide.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Markdown">
+                                <img src="https://img.icons8.com/?size=100&id=21831&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Markdown">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Markdown</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                   
+                        </a>
                     </div>
 
-                    <!-- Development Tools -->
-                    <div id="tools" class="row skill-cards">
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://code.visualstudio.com/">
+                </div>
+
+                <!-- Development Tools -->
+                <div id="tools" class="row skill-cards">
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://code.visualstudio.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="VS-Code">
+                                <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="VS-Code">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">VS Code</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://git-scm.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://git-scm.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/color/96/000000/git.png" class="card-img-top mx-auto mt-3" alt="Git">
+                                <img src="https://img.icons8.com/color/96/000000/git.png"
+                                    class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Git</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://github.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://github.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=315A6B" class="card-img-top mx-auto mt-3" alt="Git">
+                                <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=315A6B"
+                                    class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">GitHub</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://jupyter.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://jupyter.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <img src="https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Jupyter</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.linux.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.linux.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Linux</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.docker.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.docker.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/color/96/000000/docker.png" class="card-img-top mx-auto mt-3" alt="Docker">
+                                <img src="https://img.icons8.com/color/96/000000/docker.png"
+                                    class="card-img-top mx-auto mt-3" alt="Docker">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Docker</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.w3schools.com/js/js_api_intro.asp">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.w3schools.com/js/js_api_intro.asp">
                             <div class="card">
                                 <img src="https://i.imgur.com/YVgoksg.png" class="card-img-top mx-auto mt-3" alt="API">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">APIs</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.atlassian.com/software/jira">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.atlassian.com/software/jira">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=oROcPah5ues6&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="JIRA">
+                                <img src="https://img.icons8.com/?size=100&id=oROcPah5ues6&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="JIRA">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">JIRA</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://trello.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://trello.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=21049&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Trello">
+                                <img src="https://img.icons8.com/?size=100&id=21049&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Trello">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Trello</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                    <!-- Backends -->
-                    <div id="backends" class="row skill-cards">
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.djangoproject.com/">
+                </div>
+                <!-- Backends -->
+                <div id="backends" class="row skill-cards">
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.djangoproject.com/">
                             <div class="card">
-                                <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" class="card-img-top mx-auto mt-3" alt="Django">
+                                <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png"
+                                    class="card-img-top mx-auto mt-3" alt="Django">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Django</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://flask.palletsprojects.com/en/3.0.x/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://flask.palletsprojects.com/en/3.0.x/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Flask">
+                                <img src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Flask">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Flask</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://nodejs.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://nodejs.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Git">
+                                <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Git">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Node JS</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.postgresql.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.postgresql.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="MySql">
+                                <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="MySql">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">MySql</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.postgresql.org/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.postgresql.org/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Postgres">
+                                <img src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Postgres">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Postgres</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://streamlit.io/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://streamlit.io/">
                             <div class="card">
-                                <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
+                                <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="R">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Streamlit</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://mailcow.email/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://mailcow.email/">
                             <div class="card">
-                                <img src="https://i.imgur.com/toyPAPL.png"  class="card-img-top mx-auto mt-3" alt="MailCow">
+                                <img src="https://i.imgur.com/toyPAPL.png" class="card-img-top mx-auto mt-3"
+                                    alt="MailCow">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">MailCow</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
+                        </a>
                     </div>
+                </div>
 
-                    <!-- Web Hosting -->
-                    <div id="web-hosting" class="row skill-cards">
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://aws.amazon.com/">
+                <!-- Web Hosting -->
+                <div id="web-hosting" class="row skill-cards">
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://aws.amazon.com/">
                             <div class="card">
-                                <img src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="AWS">
+                                <img src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="AWS">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">AWS</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.pythonanywhere.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.pythonanywhere.com/">
                             <div class="card">
-                                <img src="https://i.imgur.com/NiImwVy.png" class="card-img-top mx-auto mt-3" alt="Pythonanywhere">
+                                <img src="https://i.imgur.com/NiImwVy.png" class="card-img-top mx-auto mt-3"
+                                    alt="Pythonanywhere">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Pythonanywhere</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.cloudflare.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.cloudflare.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=13682&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Cloudflare">
+                                <img src="https://img.icons8.com/?size=100&id=13682&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Cloudflare">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Cloudflare</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.heroku.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.heroku.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=31085&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Heroku">
+                                <img src="https://img.icons8.com/?size=100&id=31085&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Heroku">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Heroku</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.linode.com/">
+                        </a>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.linode.com/">
                             <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=20786&format=png&color=000000" style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Linode">
+                                <img src="https://img.icons8.com/?size=100&id=20786&format=png&color=000000"
+                                    style="background: transparent;" class="card-img-top mx-auto mt-3" alt="Linode">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Linode</h5>
                                 </div>
                             </div>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                    <!-- Soft Skills -->
-                    <div id="softskills" class="row skill-cards">
-                        <div class="col-auto mt-2 mb-2">
-                            <div class="card">
-                                <img src="https://img.icons8.com/color/96/000000/teamwork.png" class="card-img-top mx-auto mt-3" alt="Teamwork">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Teamwork</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <div class="card">
-                                <img src="https://img.icons8.com/color/96/000000/leadership.png" class="card-img-top mx-auto mt-3" alt="Leadership">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Leadership</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=16958&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Trekking">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Trekking</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <div class="card">
-                                <img src="https://img.icons8.com/?size=100&id=17677&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Volunteering">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Volunteering</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto mt-2 mb-2">
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                                <div class="card">
-                                    <img src="https://img.icons8.com/?size=100&id=55476&format=png&color=000000" class="card-img-top mx-auto mt-3" alt="Music">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Music</h5>
-                                    </div>   
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-            </section>
-            <section id="work-experience">
-                <div class="focus-container">
-                    <a class="focus-button" href="#work-experience"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
-                <h2>Work Experience</h2>
                 </div>
-                <ul>
-                    <li>
-                        <h3>Team Leader at Dynamic Outreach</h3>
-                        <p>December 2023 - Present</p>
-                        <ul class="bullet-list">
-                            <li>
-                                <p>
-                                    Since December 2023, I've been a face-to-face fundraiser for charities like the Red Cross, Fred Hollows Foundation, and Child Fund.
-                                </p>
-                            </li>
-                             <li>
-                                <p>
-                                    My role involves engaging with people directly, sharing the missions of these organizations, and encouraging donations. This job has sharpened my communication skills and taught me how to connect with diverse individuals. Despite the challenges, it's rewarding to know that my work supports critical causes, helping to make a meaningful impact in people's lives.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Python Developer at Filed</h3>
-                        <p>October 2021 - December 2021</p>
-                        <ul class="bullet-list">
-                            <li>
-                                <p>Developed a high-performance script that efficiently retrieved 25,000 new Instagram influencers in under five hours, significantly enhancing our platform's database.</p></li>
-                            <li><p>Implemented machine learning classification algorithms to analyze profile pictures, accurately predicting the age and gender of influencers for targeted marketing strategies.</p></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Python Freelancer</h3>
-                        <p>January 2021 - October 2021</p>
-                        <p>
-                            <ul class="bullet-list">
-                                <li>
-                                <p>Successfully completed over 40 orders in less than a year, offering services such as creating Python and R plots, web scraping, and conducting data analysis using Python.</p>
-                                </li>
-                                <li>
-                                <p>Achieved the highest project fee of $400, demonstrating my ability to deliver quality results that meet client needs.</p>
-                                </li> 
-                            </ul>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="education">
-                <div class="focus-container">
-                    <a class="focus-button" href="#education"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
-                <h2>Education</h2>
+                <!-- Soft Skills -->
+                <div id="softskills" class="row skill-cards">
+                    <div class="col-auto mt-2 mb-2">
+                        <div class="card">
+                            <img src="https://img.icons8.com/color/96/000000/teamwork.png"
+                                class="card-img-top mx-auto mt-3" alt="Teamwork">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teamwork</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <div class="card">
+                            <img src="https://img.icons8.com/color/96/000000/leadership.png"
+                                class="card-img-top mx-auto mt-3" alt="Leadership">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Leadership</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <div class="card">
+                            <img src="https://img.icons8.com/?size=100&id=16958&format=png&color=000000"
+                                class="card-img-top mx-auto mt-3" alt="Trekking">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Trekking</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <div class="card">
+                            <img src="https://img.icons8.com/?size=100&id=17677&format=png&color=000000"
+                                class="card-img-top mx-auto mt-3" alt="Volunteering">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Volunteering</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <div class="card">
+                                <img src="https://img.icons8.com/?size=100&id=55476&format=png&color=000000"
+                                    class="card-img-top mx-auto mt-3" alt="Music">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Music</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-6">
-                                <h3>Masters of Data Science</h3>
-                                <p>Deakin University</p>
-                            </div>
-                            <div class="col-6 d-flex flex-column align-items-end">
-                                <p>2022 - 2024</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-6">
-                                <h3>Bachelor of Science (Statistics)</h3>
-                                <p>Maharaja Sayajirao University of Baroda</p>
-                            </div>
-                            <div class="col-6 d-flex flex-column align-items-end">
-                                <p>2018 - 2021</p>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </section>
-            <section id="contact-section">
-                <div class="focus-container">
-                    <a class="focus-button" href="#contact-section"><img src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus" class="focus-img"></a>
-            <h2>Contact Me</h2>
             </div>
-                <form method="post" class="contact-form">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <div class="row d-flex justify-content-start">
-                        <div class="col-3 django-submit">
-                            <button type="submit" class="button-submit"><p>Send <img src="https://img.icons8.com/?size=100&id=RHtRRB1E4DKI&format=png&color=FFFFFF" alt="Icon" class="send-img"></p></button>
+        </section>
+        <section id="work-experience">
+            <div class="focus-container">
+                <a class="focus-button" href="#work-experience"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
+                    <h2>Work Experience</h2>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Team Leader at Dynamic Outreach</h3>
+                    <p>December 2023 - Present</p>
+                    <ul class="bullet-list">
+                        <li>
+                            <p>
+                                Since December 2023, I've been a face-to-face fundraiser for charities like the Red
+                                Cross, Fred Hollows Foundation, and Child Fund.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                My role involves engaging with people directly, sharing the missions of these
+                                organizations, and encouraging donations. This job has sharpened my communication skills
+                                and taught me how to connect with diverse individuals. Despite the challenges, it's
+                                rewarding to know that my work supports critical causes, helping to make a meaningful
+                                impact in people's lives.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Python Developer at Filed</h3>
+                    <p>October 2021 - December 2021</p>
+                    <ul class="bullet-list">
+                        <li>
+                            <p>Developed a high-performance script that efficiently retrieved 25,000 new Instagram
+                                influencers in under five hours, significantly enhancing our platform's database.</p>
+                        </li>
+                        <li>
+                            <p>Implemented machine learning classification algorithms to analyze profile pictures,
+                                accurately predicting the age and gender of influencers for targeted marketing
+                                strategies.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Python Freelancer</h3>
+                    <p>January 2021 - October 2021</p>
+                    <p>
+                    <ul class="bullet-list">
+                        <li>
+                            <p>Successfully completed over 40 orders in less than a year, offering services such as
+                                creating Python and R plots, web scraping, and conducting data analysis using Python.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Achieved the highest project fee of $400, demonstrating my ability to deliver quality
+                                results that meet client needs.</p>
+                        </li>
+                    </ul>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <div class="focus-container">
+                <a class="focus-button" href="#education"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
+                    <h2>Education</h2>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Masters of Data Science</h3>
+                            <p>Deakin University</p>
                         </div>
-                        <div class="col-7 align-self-end">
-                            <p class="error-mail">Error?!? please drop a mail to <a href="mailto:me@adityarajgor.com">me@adityarajgor.com</a></p>
+                        <div class="col-6 d-flex flex-column align-items-end">
+                            <p>2022 - 2024</p>
                         </div>
                     </div>
-                </form>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Bachelor of Science (Statistics)</h3>
+                            <p>Maharaja Sayajirao University of Baroda</p>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-end">
+                            <p>2018 - 2021</p>
+                        </div>
+                    </div>
+                </li>
 
-                {% if form.is_valid %}
-                    <p>Thank you! Your message has been sent.</p>
-                {% endif %}
-                
-                </section>
-            <div class="bottom-section">
+            </ul>
+        </section>
+        <section id="contact-section">
+            <div class="focus-container">
+                <a class="focus-button" href="#contact-section"><img
+                        src="https://img.icons8.com/?size=100&id=59728&format=png&color=333333" alt="focus"
+                        class="focus-img">
+                    <h2>Contact Me</h2>
+                </a>
+            </div>
+            <form method="post" class="contact-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="row d-flex justify-content-start">
+                    <div class="col-3 django-submit">
+                        <button type="submit" class="button-submit">
+                            <p>Send <img src="https://img.icons8.com/?size=100&id=RHtRRB1E4DKI&format=png&color=FFFFFF"
+                                    alt="Icon" class="send-img"></p>
+                        </button>
+                    </div>
+                    <div class="col-7 align-self-end">
+                        <p class="error-mail">Error?!? please drop a mail to <a
+                                href="mailto:me@adityarajgor.com">me@adityarajgor.com</a></p>
+                    </div>
+                </div>
+            </form>
+
+            {% if form.is_valid %}
+            <p>Thank you! Your message has been sent.</p>
+            {% endif %}
+
+        </section>
+        <div class="bottom-section">
             <div class="horizontalLine"></div>
             <footer>
                 <p>&copy; Made by Aditya Rajgor on <a href="https://www.djangoproject.com/">Django</a> 💙</p>
-                <p>&nbsp;Inspired by <a href="https://www.remi-jara.fr/" style="text-decoration: none; color: inherit;">Rémi Jara</a></p>
+                <p>&nbsp;Inspired by <a href="https://www.remi-jara.fr/"
+                        style="text-decoration: none; color: inherit;">Rémi Jara</a></p>
             </footer>
-            </div>
         </div>
-        
-        <script src="{% static 'js/home.js' %}">
-        </script>
-        <!-- Bootstrap JS and dependencies -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+
+    <script src="{% static 'js/home.js' %}">
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>

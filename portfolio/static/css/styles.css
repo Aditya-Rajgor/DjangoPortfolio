@@ -374,7 +374,7 @@ ul li::before {
     margin-top: 25px;
     padding: 20px;
     background-color: #282120;
-    border: 1px solid #ccc;
+    border: 2px solid #333;;
     border-radius: 5px;
 }
 
@@ -386,7 +386,7 @@ ul li::before {
     background-color: #333;
     color: white;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 
@@ -420,14 +420,22 @@ ul li::before {
 }
 
 .django-submit .button-submit {
+    align-content: center;
     font-size: larger;
-    margin-top: 0px;
+    padding-top: 15px;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    /* margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; */
     background-color: #333;
     border: black;
+    border-radius: 5px;
     transition: transform 0.3s;
 }
+
+/* .button-submit p {
+    text-align: center;
+} */
 
 .django-submit .button-submit:hover {
     background-color: #666;
@@ -440,7 +448,7 @@ ul li::before {
     /* Fixed height for the container */
     display: none;
     flex-wrap: wrap;
-    border: 1px solid #ddd;
+    border: 2px solid #333;
     border-radius: 5px;
     margin-bottom: 18px;
     padding: 5px;
